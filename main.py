@@ -14,7 +14,7 @@ def Home():
     st.write('在左侧边栏选择功能，开始使用吧~')
     st.write('')
     st.write('')
-    st.write('*v0.3.5*')
+    st.write('*v0.4.0_alpha_1*')
     st.write('----------------')
     st.write('今日人品')
     col1, col2 = st.columns([1, 5])
@@ -368,12 +368,10 @@ def check_date():
         return '-'.join([year, month, day])
 
 def main():
-    page = st.sidebar.radio('我的主页', ['首页', '我的兴趣推荐', '计算器', '图片处理工具', '智慧词典', '网址导航', 'RGB调色板', '留言区'])
+    page = st.sidebar.radio('我的工具箱', ['首页', '计算器', '图片处理工具', '智慧词典', '网址导航', 'RGB调色板', '留言区'])
 
     if page == '首页':
         Home()
-    elif page == '我的兴趣推荐':
-        Hobbies()
     elif page == '计算器':
         Calculator()
     elif page == '图片处理工具':
@@ -396,12 +394,6 @@ def main():
         y = int(chech_date()[3:])
         st.write('----------------')
         st.write(f'祝贺建站{str(y)}周年！')
-
-    st.write('----------------')
-    with open('bgm.mp3', 'rb') as f:
-        bgm = f.read()
-    st.write('BGM:霞光')
-    st.audio(bgm, format='audio/mp3', start_time=0)
 
 
 main()
