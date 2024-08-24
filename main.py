@@ -254,6 +254,7 @@ def RGB_designer():
 
 def Message_box():
     '''留言区'''
+    st.write('# 留言区')
     col3, col4 = st.columns([1, 1])
     with col4:
         messages_list = load_messages()
@@ -270,7 +271,6 @@ def Message_box():
                     json.dump(messages_list, f)
                 st.write('留言成功')
     with col3:
-        st.write('# 留言区')
         messages_list = load_messages()
         for i in messages_list:
             display_message(i)
