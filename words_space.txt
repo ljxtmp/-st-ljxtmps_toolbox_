@@ -7978,5 +7978,7 @@
 7985#zoo#n.动物园#
 7986#zoology#n.动物学#
 7987#Python#n.Python语言#
-7988#server#n.服务器#
+7988#server#n.服务员，服务者，服务器#
 7989#outing#n.出游#
+7990#calculator#n.计算器#
+7991#administrator#n.管理员#
