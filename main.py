@@ -14,7 +14,7 @@ def Home():
     st.write('在左侧边栏选择功能，开始使用吧~')
     st.write('')
     st.write('')
-    st.write('*v0.4.0_alpha_1*')
+    st.write('*v0.4.0_alpha_2*')
     st.write('----------------')
     st.write('今日人品')
     col1, col2 = st.columns([1, 5])
