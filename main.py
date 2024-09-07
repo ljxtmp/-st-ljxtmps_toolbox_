@@ -15,6 +15,7 @@ def Home():
     st.write('')
     st.write('')
     st.write('*v0.4.0_beta_1*')
+    st.write('当前为公测版本。我的主页v0.3.5稳定版 请前往：https://ljxtmpshomev03x.streamlit.app')
     st.write('----------------')
     st.write('今日人品')
     col1, col2 = st.columns([1, 5])
